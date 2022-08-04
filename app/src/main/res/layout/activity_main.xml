@@ -4,15 +4,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/white"
+    android:backgroundTint="#FFFFFF"
+    tools:context="com.example.mycapital.MainActivity"
+    tools:ignore="ExtraText">
+
+
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:text="Hey Investor,"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="118dp"
+        android:text="Welcome to MyCapital Apps"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/FundamentalButton"
+        android:layout_width="165dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#4BA1FD"
+        android:text=" Fundamental Calculator"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/GainLossButton"
+        android:layout_width="165dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#4BA1FD"
+        android:text="Gain/Loss Calculator"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14.5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/IpoButton"
+        android:layout_width="165dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#4BA1FD"
+        android:text="IPO CALCULATOR"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FundamentalButton" />
+
+    <Button
+        android:id="@+id/AverageButton"
+        android:layout_width="165dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#4BA1FD"
+        android:text="AVERAGE UP/DOWN calculator"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GainLossButton" />
+
+    <Button
+        android:id="@+id/TradingPlanButton"
+        android:layout_width="165dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="131dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#4BA1FD"
+        android:text="TRADING PLAN NOTES"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IpoButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

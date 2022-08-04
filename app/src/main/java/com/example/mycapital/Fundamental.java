@@ -18,7 +18,7 @@ public class Fundamental extends AppCompatActivity {
         setContentView(R.layout.activity_fundamental);
 
         //Declare Button
-        Button perButton, pbvButton, roaButton, roeButton, derButton;
+        Button perButton, pbvButton, roaButton, roeButton, derButton,FundaBackButton;
 
         //ID
         perButton = (Button) findViewById(R.id.perButton);
@@ -26,6 +26,7 @@ public class Fundamental extends AppCompatActivity {
         roaButton = (Button) findViewById(R.id.roaButton);
         roeButton = (Button) findViewById(R.id.roeButton);
         derButton = (Button) findViewById(R.id.derButton);
+        FundaBackButton = (Button) findViewById(R.id.FundaBackButton);
 
         //Switch Page & Popup Text
         perButton.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +43,7 @@ public class Fundamental extends AppCompatActivity {
         pbvButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Fundamental.this, PER.class);
+                Intent intent = new Intent(Fundamental.this, PBV.class);
                 startActivity(intent);
 
                 Toast.makeText(getApplication(), "PBV",
@@ -53,7 +54,7 @@ public class Fundamental extends AppCompatActivity {
         roaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Fundamental.this, PER.class);
+                Intent intent = new Intent(Fundamental.this, ROA.class);
                 startActivity(intent);
 
                 Toast.makeText(getApplication(), "ROA",
@@ -64,7 +65,7 @@ public class Fundamental extends AppCompatActivity {
         roeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Fundamental.this, PER.class);
+                Intent intent = new Intent(Fundamental.this, ROE.class);
                 startActivity(intent);
 
                 Toast.makeText(getApplication(), "ROE",
@@ -75,11 +76,20 @@ public class Fundamental extends AppCompatActivity {
         derButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Fundamental.this, PER.class);
+                Intent intent = new Intent(Fundamental.this, DER.class);
                 startActivity(intent);
 
                 Toast.makeText(getApplication(), "DER",
                         Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        FundaBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Fundamental.this, MainActivity.class);
+                startActivity(intent);
+
             }
         });
     }}

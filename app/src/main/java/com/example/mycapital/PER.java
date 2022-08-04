@@ -2,11 +2,13 @@ package com.example.mycapital;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.DecimalFormat;
 
@@ -19,7 +21,7 @@ public class PER extends AppCompatActivity {
 
         //Declare Button
         EditText inputPrice, inputEPS;
-        Button HitungButton;
+        Button HitungButton, perBackButton;
         TextView HasilHitungText;
 
         //ID
@@ -27,20 +29,32 @@ public class PER extends AppCompatActivity {
         inputEPS = (EditText) findViewById(R.id.inputEPS);
         HitungButton = (Button) findViewById(R.id.HitungButton);
         HasilHitungText = (TextView) findViewById(R.id.HasilHitungText);
-
+        perBackButton = (Button) findViewById(R.id.perBackButton);
 
         //Hasil
         HitungButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                double Price, EPS, Hasil;
+                double Price, EPS, PER;
 
                 Price = Double.valueOf(inputPrice.getText().toString().trim());
                 EPS = Double.valueOf(inputEPS.getText().toString().trim());
-                Hasil = Price/EPS;
+                PER = Price/EPS;
 
-                String hasil = String.valueOf(Hasil);
+                String hasil = String.valueOf(PER);
                 HasilHitungText.setText(hasil + "x");
+
+                Toast.makeText(getApplicationContext(),"Selesai Hitung",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        //Back Button
+        perBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PER.this, Fundamental.class);
+                startActivity(intent);
             }
         });
     }

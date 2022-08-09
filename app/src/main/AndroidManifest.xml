@@ -13,36 +13,68 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCapital"
         tools:targetApi="31">
+
         <activity
-            android:name=".Gain_Loss"
-            android:exported="false" />
+            android:name=".MainActivity_Page"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".Fundamental_Page"
+            android:exported="true" />
+
         <activity
             android:name=".PER"
-            android:exported="true"></activity>
-        <activity
-            android:name=".DER"
-            android:exported="false" />
-        <activity
-            android:name=".ROE"
-            android:exported="false" />
-        <activity
-            android:name=".ROA"
-            android:exported="false" />
+            android:exported="true" />
+
         <activity
             android:name=".PBV"
             android:exported="false" />
-        <activity
-            android:name=".Fundamental"
-            android:exported="true"></activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity
+            android:name=".ROA"
+            android:exported="false" />
+
+        <activity
+            android:name=".ROE"
+            android:exported="true" >
         </activity>
+
+        <activity
+            android:name=".DER"
+            android:exported="false" />
+
+        <activity
+            android:name=".Gain_Loss_Page"
+            android:exported="false" />
+
+        <activity
+            android:name=".IPO_Page"
+            android:exported="true" >
+
+        </activity>
+
+        <activity
+            android:name=".Average_Page"
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+
+
+
+
+
+
+
+
+
+
     </application>
 
 </manifest>

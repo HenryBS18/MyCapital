@@ -54,7 +54,7 @@ public class DER extends AppCompatActivity {
         derBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DER.this, Fundamental.class);
+                Intent intent = new Intent(DER.this, Fundamental_Page.class);
                 startActivity(intent);
             }
         });

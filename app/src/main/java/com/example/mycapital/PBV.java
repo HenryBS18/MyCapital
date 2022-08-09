@@ -52,7 +52,7 @@ public class PBV extends AppCompatActivity {
         pbvBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PBV.this, Fundamental.class);
+                Intent intent = new Intent(PBV.this, Fundamental_Page.class);
                 startActivity(intent);
 
             }

@@ -8,12 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity_Page extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_page);
 
         //Declare Button
         Button FundamentalButton, GainLossButton, IpoButton, AverageButton, TradingPlanButton;
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         FundamentalButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Fundamental.class);
+                Intent intent = new Intent(MainActivity_Page.this, Fundamental_Page.class);
                 startActivity(intent);
 
                 Toast.makeText(getApplicationContext(), "Fundamental Calculator",
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         GainLossButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Gain_Loss.class);
+                Intent intent = new Intent(MainActivity_Page.this, Gain_Loss_Page.class);
                 startActivity(intent);
 
                 Toast.makeText(getApplicationContext(), "Gain/Loss Calculator",
@@ -52,6 +52,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        IpoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity_Page.this, IPO_Page.class);
+                startActivity(intent);
+
+                Toast.makeText(getApplicationContext(), "IPO Calculator",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        AverageButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity_Page.this, Average_Page.class);
+                startActivity(intent);
+
+                Toast.makeText(getApplicationContext(), "Average Calculator",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 

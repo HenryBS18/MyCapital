@@ -10,12 +10,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Gain_Loss extends AppCompatActivity {
+public class Gain_Loss_Page extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gain_loss);
+        setContentView(R.layout.activity_gain_loss_page);
 
         //Declare Button
         EditText inputLot, inputBuy, inputLastPrice;
@@ -42,6 +42,7 @@ public class Gain_Loss extends AppCompatActivity {
                 Lot = Double.valueOf(inputLot.getText().toString().trim());
                 AvgBuy = Double.valueOf(inputBuy.getText().toString().trim());
                 LastPrice = Double.valueOf(inputLastPrice.getText().toString().trim());
+
                 Gain_Loss = ((LastPrice-AvgBuy)/AvgBuy)*AvgBuy*Lot*p;
                 Percent = ((LastPrice-AvgBuy)/AvgBuy)*p;
 
@@ -60,7 +61,7 @@ public class Gain_Loss extends AppCompatActivity {
         gainlossBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Gain_Loss.this, MainActivity.class);
+                Intent intent = new Intent(Gain_Loss_Page.this, MainActivity_Page.class);
                 startActivity(intent);
             }
         });

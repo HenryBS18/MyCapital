@@ -90,9 +90,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:ems="10"
+        android:hint="Contoh: 52.400.000.000"
         android:inputType="number"
         android:minHeight="48dp"
-        android:text="Contoh: 52.400.000.000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
@@ -117,9 +117,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:ems="10"
+        android:hint="Contoh: 95.000.000.000"
         android:inputType="number"
         android:minHeight="48dp"
-        android:text="Contoh: 95.000.000.000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
@@ -150,4 +150,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

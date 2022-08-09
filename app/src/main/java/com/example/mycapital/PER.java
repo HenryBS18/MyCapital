@@ -10,8 +10,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.text.DecimalFormat;
-
 public class PER extends AppCompatActivity {
 
     @Override
@@ -53,7 +51,7 @@ public class PER extends AppCompatActivity {
         perBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PER.this, Fundamental.class);
+                Intent intent = new Intent(PER.this, Fundamental_Page.class);
                 startActivity(intent);
             }
         });

@@ -108,9 +108,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:ems="10"
+        android:hint="Contoh: 250.000.000.000"
         android:inputType="number"
         android:minHeight="48dp"
-        android:text="Contoh: 250.000.000.000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
@@ -132,9 +132,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:ems="10"
+        android:hint="Contoh: 504.600.000.000"
         android:inputType="number"
         android:minHeight="48dp"
-        android:text="Contoh: 504.600.000.000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
 

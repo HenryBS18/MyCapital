@@ -26,9 +26,9 @@ public class ROE extends AppCompatActivity {
         //ID
         inputIncomeRoe = (EditText) findViewById(R.id.inputIncome);
         inputAssetRoe = (EditText) findViewById(R.id.inputAsset);
-        HitungButtonRoe = (Button) findViewById(R.id.HitungButtonRoa);
-        roeBackButton = (Button) findViewById(R.id.roaBackButton);
-        HasilHitungTextRoe = (TextView) findViewById(R.id.HasilHitungTextRoa);
+        HitungButtonRoe = (Button) findViewById(R.id.HitungButtonRoe);
+        roeBackButton = (Button) findViewById(R.id.roeBackButton);
+        HasilHitungTextRoe = (TextView) findViewById(R.id.HasilHitungTextRoe);
 
 
         //Hasil
@@ -54,7 +54,7 @@ public class ROE extends AppCompatActivity {
         roeBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ROE.this, Fundamental.class);
+                Intent intent = new Intent(ROE.this, Fundamental_Page.class);
                 startActivity(intent);
             }
         });

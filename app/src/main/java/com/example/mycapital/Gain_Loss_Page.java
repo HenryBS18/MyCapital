@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+
 public class Gain_Loss_Page extends AppCompatActivity {
 
     @Override
@@ -46,13 +48,14 @@ public class Gain_Loss_Page extends AppCompatActivity {
                 Gain_Loss = ((LastPrice-AvgBuy)/AvgBuy)*AvgBuy*Lot*p;
                 Percent = ((LastPrice-AvgBuy)/AvgBuy)*p;
 
-                String hasil = String.valueOf(Gain_Loss);
+                String hasil = String.valueOf(String.format("%,.0f", Gain_Loss));
                 HasilHitungTextGainLoss.setText(hasil);
 
-                String hasil2 = String.valueOf(Percent);
+                DecimalFormat dform = new DecimalFormat("#.##");
+                String hasil2 = dform.format(Percent);
                 PercentText.setText(hasil2 + "%");
 
-                Toast.makeText(getApplicationContext(),"Selesai Hitung",
+                Toast.makeText(getApplicationContext(),hasil2 + "%" +"Selesai Hitung",
                         Toast.LENGTH_SHORT).show();
             }
         });

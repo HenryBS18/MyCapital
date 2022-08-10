@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import java.text.DecimalFormat;
+
 public class Average_Page extends AppCompatActivity {
 
     @Override
@@ -49,30 +51,79 @@ public class Average_Page extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 double Avg;
-                int lot1, lot2, lot3, lot4, lot5;
-                int price1, price2, price3, price4, price5;
+                double lot1, lot2, lot3, lot4, lot5;
+                double price1, price2, price3, price4, price5;
 
-                lot1 = Integer.valueOf(Lot1.getText().toString().trim());
-                lot2 = Integer.valueOf(Lot2.getText().toString().trim());
-                lot3 = Integer.valueOf(Lot3.getText().toString().trim());
-                lot4 = Integer.valueOf(Lot4.getText().toString().trim());
-                lot5 = Integer.valueOf(Lot5.getText().toString().trim());
+                //if
+                if (Lot5.getText().toString().equals(""));
 
-                price1 = Integer.valueOf(Price1.getText().toString().trim());
-                price2 = Integer.valueOf(Price2.getText().toString().trim());
-                price3 = Integer.valueOf(Price3.getText().toString().trim());
-                price4 = Integer.valueOf(Price4.getText().toString().trim());
-                price5 = Integer.valueOf(Price5.getText().toString().trim());
+                else if (Price5.getText().toString().equals(""));
 
-                Avg = ((lot1*price1)+(lot2*price2)+(lot3*price3)+(lot4*price4)+(lot5*price5))/(lot1+lot2+lot3+lot4+lot5);
+                else {
+                    lot1 = Double.valueOf(Lot5.getText().toString().trim());
+                    lot2 = Double.valueOf(Lot2.getText().toString().trim());
+                    lot3 = Double.valueOf(Lot3.getText().toString().trim());
+                    lot4 = Double.valueOf(Lot4.getText().toString().trim());
 
-                String Average = String.valueOf(Avg);
-                hasilHitungTextAverage.setText(Average);
+                    price1 = Double.valueOf(Price5.getText().toString().trim());
+                    price2 = Double.valueOf(Price2.getText().toString().trim());
+                    price3 = Double.valueOf(Price3.getText().toString().trim());
+                    price4 = Double.valueOf(Price4.getText().toString().trim());
 
-                Toast.makeText(getApplicationContext(),"Selesai Hitung",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
+                    Avg = ((lot1 * price1) + (lot2 * price2) + (lot3 * price3) + (lot4 * price4)/(lot1+ lot2+ lot3+ lot4));
+
+                    DecimalFormat dform = new DecimalFormat("#.##");
+                    String Average = dform.format(Avg);
+                    hasilHitungTextAverage.setText(Average);
+                }
+
+                //if2
+                if (Lot2.getText().toString().equals(""));
+
+                else if (Price2.getText().toString().equals(""));
+
+                else {
+                    lot1 = Double.valueOf(Lot2.getText().toString().trim());
+                    price1 = Double.valueOf(Price2.getText().toString().trim());
+
+                    Avg = (lot1 * price1) / lot1;
+
+                    DecimalFormat dform = new DecimalFormat("#.##");
+                    String Average = dform.format(Avg);
+                    hasilHitungTextAverage.setText(Average);
+                }
+
+                //if3
+                if (Lot2.getText().toString().equals(""));
+
+                else if (Price2.getText().toString().equals(""));
+
+                else {
+                    lot1 = Double.valueOf(Lot2.getText().toString().trim());
+                    price1 = Double.valueOf(Price2.getText().toString().trim());
+
+                    Avg = (lot1 * price1) / lot1;
+
+                    DecimalFormat dform = new DecimalFormat("#.##");
+                    String Average = dform.format(Avg);
+                    hasilHitungTextAverage.setText(Average);
+                }
+
+
+
+
+
+//                    Avg5 = ((lot1 * price1) + (lot2 * price2) + (lot3 * price3) + (lot4 * price4) + (lot5 * price5)) / (lot1 + lot2 + lot3 + lot4 + lot5);
+//
+//                    DecimalFormat dform = new DecimalFormat("#.##");
+//                    String Average = dform.format(Avg5);
+//
+//                    hasilHitungTextAverage.setText(Average);
+//
+//                    Toast.makeText(getApplicationContext(), "Selesai Hitung",
+//                            Toast.LENGTH_SHORT).show();
+//                }
+        ;
 
         //Back Button
         averageBackButton.setOnClickListener(new View.OnClickListener() {
@@ -83,4 +134,23 @@ public class Average_Page extends AppCompatActivity {
             }
         });
     }
-}
+}); }}
+
+//    lot1 = Double.valueOf(Lot1.getText().toString().trim());
+//    lot2 = Double.valueOf(Lot2.getText().toString().trim());
+//    lot3 = Double.valueOf(Lot3.getText().toString().trim());
+//    lot4 = Double.valueOf(Lot4.getText().toString().trim());
+//    lot5 = Double.valueOf(Lot5.getText().toString().trim());
+//
+//   price1 = Double.valueOf(Price1.getText().toString().trim());
+//    price2 = Double.valueOf(Price2.getText().toString().trim());
+//    price3 = Double.valueOf(Price3.getText().toString().trim());
+//    price4 = Double.valueOf(Price4.getText().toString().trim());
+//    price5 = Double.valueOf(Price5.getText().toString().trim());
+
+//    Avg = ((lot1 * price1) + (lot2 * price2) + (lot3 * price3) + (lot4 * price4) + (lot5 * price5)) / (lot1 + lot2 + lot3 + lot4 + lot5);
+//
+//    DecimalFormat dform = new DecimalFormat("#.##");
+//    String Average = dform.format(Avg);
+//
+//                    hasilHitungTextAverage.setText(Average);

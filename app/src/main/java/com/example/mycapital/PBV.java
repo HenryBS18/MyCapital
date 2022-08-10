@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+
 public class PBV extends AppCompatActivity {
 
     @Override
@@ -40,7 +42,8 @@ public class PBV extends AppCompatActivity {
                 Equity = Double.valueOf(inputEquity.getText().toString().trim());
                 PBV = MarketCap/Equity;
 
-                String hasil = String.valueOf(PBV);
+                DecimalFormat dform = new DecimalFormat("#.##");
+                String hasil = dform.format(PBV);
                 HasilHitungTextPbv.setText(hasil + "x");
 
                 Toast.makeText(getApplicationContext(),"Selesai Hitung",

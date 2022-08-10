@@ -37,19 +37,23 @@ public class IPO_Page extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 double ipoPercentage;
-                double ipoLot, ipoPrice, totalLot, marketCap, Percent = 100;
+                double ipoLot, ipoPrice,marketCap,totalLot, Percent = 100;
+
 
                 ipoLot = Double.valueOf(inputIpoLot.getText().toString().trim());
                 ipoPrice = Double.valueOf(inputIpoPrice.getText().toString().trim());
                 ipoPercentage = Double.valueOf(inputPercentage.getText().toString().trim());
 
                 totalLot = ((ipoLot*Percent)/ipoPercentage);
-                marketCap = totalLot*ipoPrice*Percent;
+                String total = String.format("%,.0f",totalLot);
 
-                String TotalLot = String.valueOf(totalLot);
+                marketCap = ((ipoLot*Percent/ipoPercentage)*ipoPrice*Percent );
+                String market = String.format("%,.0f",marketCap);
+
+                String TotalLot = String.valueOf(total);
                 TotalLotText.setText(TotalLot);
 
-                String MarketCap = String.valueOf(marketCap);
+                String MarketCap = String.valueOf(market);
                 MarketCapText.setText(MarketCap);
 
                 hasilHitungTextIPO.setText(" ");

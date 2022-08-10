@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+
 public class ROE extends AppCompatActivity {
 
     @Override
@@ -24,8 +26,8 @@ public class ROE extends AppCompatActivity {
 
 
         //ID
-        inputIncomeRoe = (EditText) findViewById(R.id.inputIncome);
-        inputAssetRoe = (EditText) findViewById(R.id.inputAsset);
+        inputIncomeRoe = (EditText) findViewById(R.id.inputIncomeRoe);
+        inputAssetRoe = (EditText) findViewById(R.id.inputEquityRoe);
         HitungButtonRoe = (Button) findViewById(R.id.HitungButtonRoe);
         roeBackButton = (Button) findViewById(R.id.roeBackButton);
         HasilHitungTextRoe = (TextView) findViewById(R.id.HasilHitungTextRoe);
@@ -42,7 +44,8 @@ public class ROE extends AppCompatActivity {
                 Equity = Double.valueOf(inputAssetRoe.getText().toString().trim());
                 ROE = (NetIncome/Equity)*p;
 
-                String hasil = String.valueOf(ROE);
+                DecimalFormat dform = new DecimalFormat("#.##");
+                String hasil = dform.format(ROE);
                 HasilHitungTextRoe.setText(hasil + "%");
 
                 Toast.makeText(getApplicationContext(),"Selesai Hitung",

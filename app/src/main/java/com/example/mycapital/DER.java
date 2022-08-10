@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+
 public class DER extends AppCompatActivity {
 
     @Override
@@ -42,7 +44,8 @@ public class DER extends AppCompatActivity {
                 Equity = Double.valueOf(inputEquityDer.getText().toString().trim());
                 DER = (Liabilities/Equity)*p;
 
-                String hasil = String.valueOf(DER);
+                DecimalFormat dform = new DecimalFormat("#.##");
+                String hasil = dform.format(DER);
                 HasilHitungTextDer.setText(hasil + "%");
 
                 Toast.makeText(getApplicationContext(),"Selesai Hitung",

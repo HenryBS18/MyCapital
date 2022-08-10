@@ -74,13 +74,4 @@ public class MainActivity_Page extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
             }
         });
-
-
-
-
-
-
-
-
-
     }}

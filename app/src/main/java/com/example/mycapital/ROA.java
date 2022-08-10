@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+
 public class ROA extends AppCompatActivity {
 
     @Override
@@ -42,7 +44,8 @@ public class ROA extends AppCompatActivity {
                 Asset = Double.valueOf(inputAsset.getText().toString().trim());
                 ROA = (NetIncome/Asset)*p;
 
-                String hasil = String.valueOf(ROA);
+                DecimalFormat dform = new DecimalFormat("#.##");
+                String hasil = dform.format(ROA);
                 HasilHitungTextRoa.setText(hasil + "%");
 
                 Toast.makeText(getApplicationContext(),"Selesai Hitung",

@@ -10,12 +10,12 @@
         android:id="@+id/textView46"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
         android:text="Market Cap : "
         android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView45"
         app:layout_constraintTop_toBottomOf="@+id/textView44" />
 
     <TextView
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:text="Total Lot : "
         android:textColor="#000000"
         android:textSize="20sp"
@@ -47,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="97dp"
         android:text="Klik tombol &quot;hitung&quot; dulu"
         android:textSize="20sp"
@@ -133,13 +133,13 @@
         android:id="@+id/textView44"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="182dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="183dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="177dp"
         android:text="Hasil"
+        android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hitungButtonIPO" />
 
@@ -181,11 +181,11 @@
 
     <TextView
         android:id="@+id/MarketCapText"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="12dp"
         android:textSize="21sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TotalLotText"
         app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
     <EditText

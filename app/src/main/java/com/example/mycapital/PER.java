@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+
 public class PER extends AppCompatActivity {
 
     @Override
@@ -39,8 +41,9 @@ public class PER extends AppCompatActivity {
                 EPS = Double.valueOf(inputEPS.getText().toString().trim());
                 PER = Price/EPS;
 
-                String hasil = String.valueOf(PER);
-                HasilHitungText.setText(hasil + "x");
+                DecimalFormat dform = new DecimalFormat("#.##");
+                String Average = dform.format(PER);
+                HasilHitungText.setText(Average + "x");
 
                 Toast.makeText(getApplicationContext(),"Selesai Hitung",
                         Toast.LENGTH_SHORT).show();

@@ -49,7 +49,7 @@ public class Gain_Loss_Page extends AppCompatActivity {
                 Percent = ((LastPrice-AvgBuy)/AvgBuy)*p;
 
                 String hasil = String.valueOf(String.format("%,.0f", Gain_Loss));
-                HasilHitungTextGainLoss.setText(hasil);
+                HasilHitungTextGainLoss.setText("Rp." + hasil);
 
                 DecimalFormat dform = new DecimalFormat("#.##");
                 String hasil2 = dform.format(Percent);

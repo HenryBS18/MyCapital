@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/purple_200"
     tools:context=".Gain_Loss_Page">
 
     <Button
@@ -27,7 +28,6 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView37" />
 
@@ -50,11 +50,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="162dp"
         android:text="Hitung"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputLastPrice" />
 
@@ -87,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:text="Average Buy : "
         android:textColor="#000000"
         android:textSize="20sp"
@@ -99,19 +98,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="24dp"
         android:text="Lot : "
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <TextView
         android:id="@+id/textView36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:text="Harga Sekarang (Last Price) : "
         android:textColor="#000000"
         android:textSize="20sp"
@@ -123,7 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="47dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="48dp"
         android:text="Gain/Loss Calculator"
         android:textColor="@color/black"
@@ -162,7 +161,6 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="177dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="176dp"
         android:text="%"
         android:textAlignment="center"

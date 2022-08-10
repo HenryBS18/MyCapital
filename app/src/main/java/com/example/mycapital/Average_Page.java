@@ -54,76 +54,120 @@ public class Average_Page extends AppCompatActivity {
                 double lot1, lot2, lot3, lot4, lot5;
                 double price1, price2, price3, price4, price5;
 
-                //if
-                if (Lot5.getText().toString().equals(""));
+                lot1 = Double.valueOf(Lot1.getText().toString().trim());
+                lot2 = Double.valueOf(Lot2.getText().toString().trim());
+                lot3 = Double.valueOf(Lot3.getText().toString().trim());
+                lot4 = Double.valueOf(Lot4.getText().toString().trim());
+                lot5 = Double.valueOf(Lot5.getText().toString().trim());
 
-                else if (Price5.getText().toString().equals(""));
+                price1 = Double.valueOf(Price1.getText().toString().trim());
+                price2 = Double.valueOf(Price2.getText().toString().trim());
+                price3 = Double.valueOf(Price3.getText().toString().trim());
+                price4 = Double.valueOf(Price4.getText().toString().trim());
+                price5 = Double.valueOf(Price5.getText().toString().trim());
 
-                else {
-                    lot1 = Double.valueOf(Lot5.getText().toString().trim());
-                    lot2 = Double.valueOf(Lot2.getText().toString().trim());
-                    lot3 = Double.valueOf(Lot3.getText().toString().trim());
-                    lot4 = Double.valueOf(Lot4.getText().toString().trim());
+                Avg = ((lot1 * price1) + (lot2 * price2) + (lot3 * price3) + (lot4 * price4) + (lot5 * price5)) / (lot1 + lot2 + lot3 + lot4 + lot5);
 
-                    price1 = Double.valueOf(Price5.getText().toString().trim());
-                    price2 = Double.valueOf(Price2.getText().toString().trim());
-                    price3 = Double.valueOf(Price3.getText().toString().trim());
-                    price4 = Double.valueOf(Price4.getText().toString().trim());
+                DecimalFormat dform = new DecimalFormat("#.##");
+                String Average = dform.format(Avg);
 
-                    Avg = ((lot1 * price1) + (lot2 * price2) + (lot3 * price3) + (lot4 * price4)/(lot1+ lot2+ lot3+ lot4));
-
-                    DecimalFormat dform = new DecimalFormat("#.##");
-                    String Average = dform.format(Avg);
-                    hasilHitungTextAverage.setText(Average);
-                }
-
-                //if2
-                if (Lot2.getText().toString().equals(""));
-
-                else if (Price2.getText().toString().equals(""));
-
-                else {
-                    lot1 = Double.valueOf(Lot2.getText().toString().trim());
-                    price1 = Double.valueOf(Price2.getText().toString().trim());
-
-                    Avg = (lot1 * price1) / lot1;
-
-                    DecimalFormat dform = new DecimalFormat("#.##");
-                    String Average = dform.format(Avg);
-                    hasilHitungTextAverage.setText(Average);
-                }
-
-                //if3
-                if (Lot2.getText().toString().equals(""));
-
-                else if (Price2.getText().toString().equals(""));
-
-                else {
-                    lot1 = Double.valueOf(Lot2.getText().toString().trim());
-                    price1 = Double.valueOf(Price2.getText().toString().trim());
-
-                    Avg = (lot1 * price1) / lot1;
-
-                    DecimalFormat dform = new DecimalFormat("#.##");
-                    String Average = dform.format(Avg);
-                    hasilHitungTextAverage.setText(Average);
-                }
+                hasilHitungTextAverage.setText(Average);
 
 
 
 
 
-//                    Avg5 = ((lot1 * price1) + (lot2 * price2) + (lot3 * price3) + (lot4 * price4) + (lot5 * price5)) / (lot1 + lot2 + lot3 + lot4 + lot5);
+//                //ifa
+//                if (Lot5.getText().toString().equals(Lot5));
+//
+//                else if (Price5.getText().toString().equals(Price5));
+//
+//                else {
+//                    lot1 = Double.valueOf(Lot1.getText().toString().trim());
+//                    lot2 = Double.valueOf(Lot2.getText().toString().trim());
+//                    lot3 = Double.valueOf(Lot3.getText().toString().trim());
+//                    lot4 = Double.valueOf(Lot4.getText().toString().trim());
+//                    lot5 = Double.valueOf(Lot5.getText().toString().trim());
+//
+//                    price1 = Double.valueOf(Price1.getText().toString().trim());
+//                    price2 = Double.valueOf(Price2.getText().toString().trim());
+//                    price3 = Double.valueOf(Price3.getText().toString().trim());
+//                    price4 = Double.valueOf(Price4.getText().toString().trim());
+//                    price5 = Double.valueOf(Price5.getText().toString().trim());
+//
+//                    Avg = ((lot1 * price1) + (lot2 * price2) + (lot3 * price3) + (lot4 * price4) + (lot5 * price5) / (lot1 + lot2 + lot3 + lot4 + lot5));
 //
 //                    DecimalFormat dform = new DecimalFormat("#.##");
-//                    String Average = dform.format(Avg5);
-//
+//                    String Average = dform.format(Avg);
 //                    hasilHitungTextAverage.setText(Average);
-//
-//                    Toast.makeText(getApplicationContext(), "Selesai Hitung",
-//                            Toast.LENGTH_SHORT).show();
 //                }
-        ;
+//
+//                //if
+//                if (Lot5.getText().toString().equals(Lot5));
+//
+//                else if (Price5.getText().toString().equals(""));
+//
+//                else {
+//                    lot1 = Double.valueOf(Lot1.getText().toString().trim());
+//                    lot2 = Double.valueOf(Lot2.getText().toString().trim());
+//                    lot3 = Double.valueOf(Lot3.getText().toString().trim());
+//                    lot4 = Double.valueOf(Lot4.getText().toString().trim());
+//
+//                    price1 = Double.valueOf(Price1.getText().toString().trim());
+//                    price2 = Double.valueOf(Price2.getText().toString().trim());
+//                    price3 = Double.valueOf(Price3.getText().toString().trim());
+//                    price4 = Double.valueOf(Price4.getText().toString().trim());
+//
+//                    Avg = ((lot1 * price1) + (lot2 * price2) + (lot3 * price3) + (lot4 * price4) / (lot1 + lot2 + lot3 + lot4));
+//
+//                    DecimalFormat dform = new DecimalFormat("#.##");
+//                    String Average = dform.format(Avg);
+//                    hasilHitungTextAverage.setText(Average);
+//                }
+//
+//                //if 2
+//                if (Lot4.getText().toString().equals(""));
+//
+//                else if (Price4.getText().toString().equals(""));
+//
+//                else {
+//                    lot1 = Double.valueOf(Lot1.getText().toString().trim());
+//                    lot2 = Double.valueOf(Lot2.getText().toString().trim());
+//                    lot3 = Double.valueOf(Lot3.getText().toString().trim());
+//
+//                    price1 = Double.valueOf(Price1.getText().toString().trim());
+//                    price2 = Double.valueOf(Price2.getText().toString().trim());
+//                    price3 = Double.valueOf(Price3.getText().toString().trim());
+//
+//                    Avg = ((lot1 * price1) + (lot2 * price2) + (lot3 * price3) / (lot1 + lot2 + lot3));
+//
+//                    DecimalFormat dform = new DecimalFormat("#.##");
+//                    String Average = dform.format(Avg);
+//                    hasilHitungTextAverage.setText(Average);
+//                }
+//
+//                //if 3
+//                if (Lot3.getText().toString().equals(""));
+//
+//                else if (Price3.getText().toString().equals(""));
+//
+//                else {
+//                    lot1 = Double.valueOf(Lot1.getText().toString().trim());
+//                    lot2 = Double.valueOf(Lot2.getText().toString().trim());
+//
+//                    price1 = Double.valueOf(Price1.getText().toString().trim());
+//                    price2 = Double.valueOf(Price2.getText().toString().trim());
+//
+//                    Avg = ((lot1 * price1) + (lot2 * price2) / (lot1 + lot2));
+//
+//                    DecimalFormat dform = new DecimalFormat("#.##");
+//                    String Average = dform.format(Avg);
+//                    hasilHitungTextAverage.setText(Average);
+//                }
+//            }});
+
+
+    }});
 
         //Back Button
         averageBackButton.setOnClickListener(new View.OnClickListener() {
@@ -134,23 +178,4 @@ public class Average_Page extends AppCompatActivity {
             }
         });
     }
-}); }}
-
-//    lot1 = Double.valueOf(Lot1.getText().toString().trim());
-//    lot2 = Double.valueOf(Lot2.getText().toString().trim());
-//    lot3 = Double.valueOf(Lot3.getText().toString().trim());
-//    lot4 = Double.valueOf(Lot4.getText().toString().trim());
-//    lot5 = Double.valueOf(Lot5.getText().toString().trim());
-//
-//   price1 = Double.valueOf(Price1.getText().toString().trim());
-//    price2 = Double.valueOf(Price2.getText().toString().trim());
-//    price3 = Double.valueOf(Price3.getText().toString().trim());
-//    price4 = Double.valueOf(Price4.getText().toString().trim());
-//    price5 = Double.valueOf(Price5.getText().toString().trim());
-
-//    Avg = ((lot1 * price1) + (lot2 * price2) + (lot3 * price3) + (lot4 * price4) + (lot5 * price5)) / (lot1 + lot2 + lot3 + lot4 + lot5);
-//
-//    DecimalFormat dform = new DecimalFormat("#.##");
-//    String Average = dform.format(Avg);
-//
-//                    hasilHitungTextAverage.setText(Average);
+}

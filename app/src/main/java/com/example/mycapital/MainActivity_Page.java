@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.util.Dictionary;
+
 public class MainActivity_Page extends AppCompatActivity {
 
     @Override
@@ -16,7 +18,7 @@ public class MainActivity_Page extends AppCompatActivity {
         setContentView(R.layout.activity_main_page);
 
         //Declare Button
-        Button FundamentalButton, GainLossButton, IpoButton, AverageButton, TradingPlanButton;
+        Button FundamentalButton, GainLossButton, IpoButton, AverageButton, DictionaryButton;
 
 
         //ID
@@ -24,7 +26,7 @@ public class MainActivity_Page extends AppCompatActivity {
         GainLossButton = findViewById(R.id.GainLossButton);
         IpoButton = findViewById(R.id.IpoButton);
         AverageButton = findViewById(R.id.AverageButton);
-        TradingPlanButton = findViewById(R.id.TradingPlanButton);
+        DictionaryButton = findViewById(R.id.DictionaryButton);
 
 
         //Switch Button
@@ -71,6 +73,17 @@ public class MainActivity_Page extends AppCompatActivity {
                 startActivity(intent);
 
                 Toast.makeText(getApplicationContext(), "Average Calculator",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        DictionaryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity_Page.this, Stocks_Dictionary.class);
+                startActivity(intent);
+
+                Toast.makeText(getApplicationContext(), "DICTIONARY",
                         Toast.LENGTH_SHORT).show();
             }
         });

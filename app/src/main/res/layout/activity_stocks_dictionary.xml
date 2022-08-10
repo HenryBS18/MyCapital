@@ -6,6 +6,7 @@
     android:id="@+id/scrollView2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:fillViewport="true">
 
     <TextView
@@ -46,20 +47,138 @@
                     android:id="@+id/textView58"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="1. Price Earning Ratio (PER)
-Lorem ipsum dolor sit amet, consectetur
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="1. Investasi
+\n
+Investasi adalah aktivitas menempatkan modal baik berupa uang atau aset berharga lainnya ke dalam suatu benda, lembaga, atau suatu pihak dengan harapan pemodal atau investor kelak akan mendapatkan keuntungan setelah kurun waktu tertentu.
 \n\n
-2. Price to book (PBV)
-Lorem ipsum   dolor   sit amet    dengan  PERcentText"
 
+2. Trading
+\n
+Trading adalah aktivitas yang mengacu pada tindakan pembelian dan penjualan di pasar modal dalam waktu singkat untuk mendapatkan untung sebesar-besarnya.
+\n\n
+
+3. Analisis Fundamental
+\n
+Analisis Fundamental adalah salah satu metode pengukuran yang digunakan para investor untuk mengetahui nilai wajar suatu saham.
+\n
+Metode ini dilakukan dengan memeriksa faktor keuangan dan kondisi ekonomi perusahaan terkait.
+\n\n
+
+4. Price to Earning Ratio (PER)
+\n
+PER merupakan rasio yang menggambarkan harga saham sebuah perusahaan dibandingkan dengan keuntungan atau laba yang dihasilkan perusahaan tersebut (EPS).
+\n
+Analisa PER suatu perusahaan dapat dilakukan dengan cara membandingkan PER dalam industri sejenis.
+\n\n
+
+5. Price to Book Value (PBV)
+\n
+PBV adalah rasio harga saham terhadap nilai buku perusahaan (Ekuitas). PBV digunakan untuk melihat seberapa besar kelipatan dari nilai pasar saham perusahaan dengan nilai bukunya (Ekuitas).
+\n\n
+
+6. Return on Asset (ROA)
+\n
+ROA adalah rasio yang menunjukkan seberapa besar kontribusi aset dalam menciptakan laba bersih.
+\n
+Kinerja sebuah perusahaan dikatakan baik apabila menghasilkan ROA yang tinggi dan menunjukkan laju peningkatan dari waktu ke waktu.
+\n\n
+
+7. Return on Equity (ROE)
+\n
+ROE merupakan kemampuan perusahaan dalam menghasilkan keuntungan dengan modal sendiri yang dimiliki.
+\n
+ROE yang tinggi menggambarkan perusahaan yang berhasil menghasilkan keuntungan dari modal sendiri.
+\n
+Peningkatan ROE akan meningkatkan nilai jual perusahaan yang kemudian akan berimbas juga pada harga saham.
+\n\n
+
+8. Debt to Equity Ratio (DER)
+\n
+DER adalah rasio untuk melihat berapa besar utang dibandingkan total ekuitas yang dimiliki perusahaan. Utang yang besar dapat menjadi risiko bagi suatu perusahaan.
+\n\n
+
+9. Earning Per Share (EPS)
+\n
+EPS adalah laba perusahaan yang dibagi per lembar saham. Semakin meningkat nilai EPS dari tahun ke tahun, maka perusahaan tersebut semakin baik karena laba perusahaan meningkat, serta perusahaan dapat dikatakan bertumbuh.
+\n
+Apabila suatu saham memiliki nilai EPS Rp500, maka saham tersebut menghasilkan laba sebesar Rp500 setiap lembar sahamnya.
+\n\n
+
+10. Equity
+\n
+Ekuitas merupakan modal berupa harta yang dikeluarkan perusahaan untuk digunakan sebagai biaya operasional perusahaan.
+\n
+Nantinya harta tersebut akan mengalami pengurangan karena kewajiban yang harus dibayarkan seperti kewajiban utang dan beban lainnya.
+\n\n
+
+11. Asset
+\n
+Asset adalah semua aset yang dimiliki oleh perusahaan yang memiliki potensi manfaat ekonomi di masa depan.
+\n\n
+
+12. Liabilities
+\n
+liabilitas adalah suatu kewajiban yang dimiliki perusahaan yang harus dibayar berdasarkan periode tertentu, biasanya didasarkan atas nilai uang.
+\n\n
+
+13. Net Income
+\n
+Laba bersih adalah kelebihan seluruh pendapatan atas seluruh biaya untuk suatu periode tertentu setelah dikuarangi pajak penghasilan yang disajikan dalam bentuk laporan laba rugi.
+\n\n
+
+14. Market Cap
+\n
+kapitalisasi pasar merupakan nilai perusahaan berdasarkan harga pasar sekarang.
+\n
+Rumus dari market cap adalah harga pasar dikalikan dengan jumlah saham beredar.
+\n\n
+
+15. Average
+\n
+Average adalah nilai rata-rata pembelian atau penjualan suatu saham.
+\n\n
+
+16. Gain/Loss
+\n
+Gain adalah keuntungan yang diperoleh ketika nilai investasi mengalami kenaikan.
+\n
+Loss adalah kerugian yang diperoleh ketika nilai investasi mengalami penurunan.
+\n\n
+
+17. Initial Public Offering (IPO)
+\n
+IPO atau penawaran umum ini adalah istilah di mana suatu perusahaan atau emiten menawarkan dan menjual efek-efek yang diterbitkannya dalam bentuk saham kepada masyarakat secara luas.
+\n\n
+"
                     android:textColor="@color/black"
                     android:textSize="25sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_editor_absoluteX="0dp" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView58"
+                    tools:layout_editor_absoluteX="16dp">
+
+                    <Button
+                        android:id="@+id/dictionaryBackButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back"
+                        android:layout_marginRight="48dp"
+                        android:layout_marginBottom="48dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </ScrollView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

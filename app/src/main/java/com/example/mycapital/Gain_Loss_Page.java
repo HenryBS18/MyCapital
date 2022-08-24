@@ -55,7 +55,7 @@ public class Gain_Loss_Page extends AppCompatActivity {
                 String hasil2 = dform.format(Percent);
                 PercentText.setText(hasil2 + "%");
 
-                Toast.makeText(getApplicationContext(),hasil2 + "%" +"Selesai Hitung",
+                Toast.makeText(getApplicationContext(),"Selesai Hitung",
                         Toast.LENGTH_SHORT).show();
             }
         });

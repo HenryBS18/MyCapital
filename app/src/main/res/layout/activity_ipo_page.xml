@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
     tools:context=".IPO_Page">
 
     <TextView
@@ -63,6 +62,8 @@
         android:layout_marginStart="161dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="162dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#43A6DC"
         android:text="Hitung"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,8 +98,10 @@
         android:id="@+id/ipoBackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#43A6DC"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

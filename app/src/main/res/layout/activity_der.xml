@@ -28,6 +28,8 @@
         android:layout_marginStart="161dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="162dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#43A6DC"
         android:text="Hitung"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,13 +103,13 @@
         android:id="@+id/derBackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="307dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#43A6DC"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/inputLiabilities"

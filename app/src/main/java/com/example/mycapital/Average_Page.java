@@ -45,7 +45,6 @@ public class Average_Page extends AppCompatActivity {
 
         hasilHitungTextAverage = (TextView) findViewById(R.id.hasilHitungTextAverage);
 
-
         //Hasil
         hitungButtonAverage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,10 +71,6 @@ public class Average_Page extends AppCompatActivity {
                 String Average = dform.format(Avg);
 
                 hasilHitungTextAverage.setText(Average);
-
-
-
-
 
 //                //ifa
 //                if (Lot5.getText().toString().equals(Lot5));

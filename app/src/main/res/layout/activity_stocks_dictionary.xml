@@ -7,7 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:textAlignment="textStart">
 
     <TextView
         android:id="@+id/textView53"
@@ -15,8 +16,8 @@
         android:layout_height="55dp"
         android:background="#43A6DC"
         android:text="MyCapital"
-        android:textColor="@color/black"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +50,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="4dp"
-                    android:text="1. Investasi
+                    android:layout_marginTop="4dp"
+                    android:text=" 1. Investasi
 \n
 Investasi adalah aktivitas menempatkan modal baik berupa uang atau aset berharga lainnya ke dalam suatu benda, lembaga, atau suatu pihak dengan harapan pemodal atau investor kelak akan mendapatkan keuntungan setelah kurun waktu tertentu.
 \n\n
@@ -153,7 +155,7 @@ IPO atau penawaran umum ini adalah istilah di mana suatu perusahaan atau emiten 
 \n\n
 "
                     android:textColor="@color/black"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -168,9 +170,11 @@ IPO atau penawaran umum ini adalah istilah di mana suatu perusahaan atau emiten 
                         android:id="@+id/dictionaryBackButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/rounded_button"
+                        android:backgroundTint="#43A6DC"
                         android:text="Back"
-                        android:layout_marginRight="48dp"
-                        android:layout_marginBottom="48dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
